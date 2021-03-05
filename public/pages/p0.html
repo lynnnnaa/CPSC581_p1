@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="Describe this page." />
+        <!-- Bootstrap core CSS -->
+        <link href="../dist/css/bootstrap.min.css" rel="stylesheet" />
+        <!-- Custom CSS -->
+        <link href="../stylesheets/custom.css" rel="stylesheet" />
+        <script src = "scripts/index.js"></script>
+
+        <title>Project 0</title>
+    </head>
+    <body style="background-color:#9ba674;">
+      <header>
+        <div class="collapse bg-dark" id="navbarHeader">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-8 col-md-7 py-4">
+                <h4 class="text-white">About Me</h4>
+                <p class="text-muted">
+                  Add some information about yourself, or any other background
+                  context. Make it a few sentences long so folks can pick up some
+                  informative tidbits. Then, link them off to some social
+                  networking sites or contact information.
+                </p>
+              </div>
+              <div class="col-sm-4 offset-md-1 py-4">
+                <h4 class="text-white">Contact</h4>
+                <ul class="list-unstyled">
+                  <li><a href="#" class="text-white">Twitter</a></li>
+                  <li><a href="#" class="text-white">Facebook</a></li>
+                  <li><a href="#" class="text-white">GitHub</a></li>
+                  <li><a href="#" class="text-white">Email Me</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="navbar navbar-dark bg-dark shadow-sm">
+          <div class="container">
+            <a href="#" class="navbar-brand d-flex align-items-center">
+              <strong>Jiarong Xu</strong>
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarHeader"
+              aria-controls="navbarHeader"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+        </div>
+      </header>
+
+    <h1>Dog Socializer</h1>
+    <!-- <h1 href="#" class="navbar-brand d-flex align-items-center">
+      <strong>Jiarong Xu</strong>
+    </h1> -->
+
+    <div id="img_placeholder" ></div>
+
+    <p id="text">Socialize me!</p>
+    <input id="myBtn" type="image" src="../images/dog.png" alt="dog pic" width="150" height="150">
+
+    <p id="footer">Designed for Steve</p>
+
+    <script>
+    document.getElementById("myBtn").onclick = playSound;
+    var img = document.getElementById("img_placeholder");
+
+    function playSound() {
+        let audio1 = new Audio("../sounds/cats-meowing.mp3");
+        let audio2 = new Audio("../sounds/car_horn.mp3");
+        let audio3 = new Audio("../sounds/bird_flute.mp3");
+        let audio4 = new Audio("../sounds/baby_laughing.mp3");
+        let audios = [audio1, audio2, audio3, audio4];
+
+        var img1 = document.createElement("img");
+        img1.src = "../images/cat.jpg";
+        var img2 = document.createElement("img");
+        img2.src = "../images/car.jpg";
+        var img3 = document.createElement("img");
+        img3.src = "../images/bird.jpg";
+        var img4 = document.createElement("img");
+        img4.src = "../images/baby.jpg";
+        let imgs = [img1.src, img2.src, img3.src, img4.src];
+
+        randomNum = Math.floor(Math.random()*4)+1;
+        audios[randomNum].play();
+        img.style.backgroundImage = "url('"+imgs[randomNum]+"')";
+    }
+
+    </script>
+
+    </body>
+<!-- Scripts-->
+</html>

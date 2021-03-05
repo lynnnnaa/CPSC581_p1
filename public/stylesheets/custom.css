@@ -1,0 +1,150 @@
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
+
+h1, h2{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 4%;
+  /* font-family: "Verdana";
+  font-size: 330%; */
+}
+
+#sketch {
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+#text {
+  position: absolute;
+  bottom: 440px;
+  right: 23px;
+  font-size: 200%;
+  font-style: oblique;
+}
+
+#myBtn {
+  position: absolute;
+  bottom: 310px;
+  right: 40px;
+}
+
+#footer {
+  position: absolute;
+  bottom: 3px;
+  right: 25px;
+  font-style: italic;
+  color: grey;
+}
+
+.content {
+  margin: 7% 25% 5% 25%;
+}
+
+.source {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5%;
+}
+
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+#sketches {
+  margin: 7% 5% 5% 5%;
+}
+
+#img_placeholder{
+    line-height:650px;
+		width: 700px;
+    height: 550px;
+		margin:0 auto;
+    margin-top: 3%;
+}
+
+/* project 1 */
+
+#gameOver{
+    position: absolute;
+    top: 8px;
+    width : 400px;
+    height: 600px;
+    background: rgba(0,0,0,0.2);
+    display: none;
+}
+#lose{
+    position: absolute;
+    width: 200px;
+    top: 180px;
+    left : 96px;
+    display: none;
+}
+#restart{
+    position: absolute;
+    top: 390px;
+    left : 135px;
+    cursor: pointer;
+    font-size: 1.5em;
+    color : #FFF;
+    font-family: verdana;
+}
+#gameName{
+    position: absolute;
+    top: 200px;
+    left : 55px;
+    cursor: pointer;
+    font-size: 1.9em;
+    color : black;
+    font-family: verdana;
+}
+#startGame{
+    position: absolute;
+    top: 300px;
+    left : 175px;
+    cursor: pointer;
+    font-size: 1.5em;
+    color : black;
+    font-family: verdana;
+}
+#instruction{
+    position: absolute;
+    top: 620px;
+    left : 15px;
+    cursor: pointer;
+    font-size: 0.7em;
+    color : black;
+    font-family: verdana;
+}
